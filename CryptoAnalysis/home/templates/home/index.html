@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'home/fonts/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static "home/css/owl.carousel.min.css" %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+
+    <title>Website Menu #3</title>
+  </head>
+  <body>
+
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">Crytpto~Analysis</a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active"><a href="index.html"><span>Home</span></a></li>
+                <li class="has-children">
+                  <a href="about.html"><span>More Info</span></a>
+                  <ul class="dropdown arrow-top">
+                    <li><a href="#">Crypto Currencies</a></li>
+                    <li><a href="#">Ligal Terms</a></li>
+                    <li><a href="#">Investments</a></li>
+                    <li class="has-children">
+                      <a href="#">Model</a>
+                      <ul class="dropdown">
+                        <li><a href="#">ANN Model</a></li>
+                        <li><a href="#">Datasets</a></li>
+                    
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+               
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="listings.html"><span>Datasets</span></a></li>
+                <li><a href="blog.html"><span>Project Info</span></a></li>
+                <li><a href="contact.html"><span>Team</span></a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+    <div class="hero" style="background-image: url('{% static 'home/images/crypto.jpg' %}');"></div>
+  
+
+    {% comment %} for the basic crypto currenccy informations  {% endcomment %}
+
+    <div class="basicinfo" style="background:black">
+
+        <div class="container">
+      
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="{% static 'home/images/cryptoinfo.webp'%}" alt="" class="img-fluid mt-4">
+                </div>
+
+                <div class="col-sm-6 text-light mt-4">
+                    <b>What is cryptocurrency and how does it work?</b> <br>
+                    A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms. The use of encryption technologies means that cryptocurrencies function both as a currency and as a virtual accounting system. To use cryptocurrencies, you need a cryptocurrency wallet.
+                    Cryptocurrency is a digital payment system that doesn't rely on banks to verify transactions. It’s a peer-to-peer system that can enable anyone anywhere to send and receive payments. Instead of being physical money carried around and exchanged in the real world, cryptocurrency payments exist purely as digital entries to an online database describing specific transactions. When you transfer cryptocurrency funds, the transactions are recorded in a public ledger. Cryptocurrency is stored in digital wallets. 
+                    <a href="https://en.wikipedia.org/wiki/Cryptocurrency" class="text-info">More Info</a>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+            
+
+                <div class="col-sm-6 text-light mt-4">
+                    <b>Is Crypto Currency Ligle In India ?</b> <br>
+                    Based on the various key statements made by the Reserve Bank Of India Governor as well as various government spokespersons including the Finance Minister of the country, one can conclude that cryptocurrency is illegal, but there is no certain ban on it in India.
+                    The Cryptocurrency and Regulation of Official Digital Currency Bill, 2021 is yet to be tabled by the government. The Bill seeks to prohibit all private cryptocurrencies in India, however, “it allows for certain exceptions to promote the underlying technology of cryptocurrency and its uses,” the document reads.
+
+                    India has levied a 30 per cent tax on crypto investors, and a 1 per cent TDS on every crypto intra-traders. Currently, India has not regulated cryptos but won’t legalise it as well.
+
+                    <a href="https://www.forbes.com/advisor/in/investing/cryptocurrency/crypto-bill/" class="text-info">More Info</a>
+
+        
+                </div>
+
+                <div class="col-sm-6">
+                    <img src="{% static 'home/images/india.jpg'%}" alt="" class="img-fluid mt-4">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="{% static 'home/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'home/js/popper.min.js' %}"></script>
+    <script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'home/js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'home/js/main.js'%}"></script>
+  </body>
+</html>
