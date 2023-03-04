@@ -17,8 +17,8 @@
     
     <!-- Style -->
     <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
-
-    <title>Website Menu #3</title>
+    <link rel="shortcut icon" href="{% static 'home/images/crypto.jpg' %}" type="image/x-icon">
+    <title>Crypto Currency</title>
   </head>
   <body>
 
@@ -38,7 +38,7 @@
         <div class="row align-items-center">
           
           <div class="col-11 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">Crytpto~Analysis</a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">QORA-ANN</a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -62,9 +62,9 @@
                   </ul>
                 </li>
                
-                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="#about"><span>About</span></a></li>
                 <li><a href="listings.html"><span>Datasets</span></a></li>
-                <li><a href="blog.html"><span>Project Info</span></a></li>
+                <li><a href="#project"><span>Project Info</span></a></li>
                 <li><a href="contact.html"><span>Team</span></a></li>
               </ul>
             </nav>
@@ -87,7 +87,7 @@
 
     <div class="basicinfo" style="background:black">
 
-        <div class="container">
+        <div class="container-fluid">
       
 
 
@@ -100,7 +100,7 @@
                     <b>What is cryptocurrency and how does it work?</b> <br>
                     A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms. The use of encryption technologies means that cryptocurrencies function both as a currency and as a virtual accounting system. To use cryptocurrencies, you need a cryptocurrency wallet.
                     Cryptocurrency is a digital payment system that doesn't rely on banks to verify transactions. It’s a peer-to-peer system that can enable anyone anywhere to send and receive payments. Instead of being physical money carried around and exchanged in the real world, cryptocurrency payments exist purely as digital entries to an online database describing specific transactions. When you transfer cryptocurrency funds, the transactions are recorded in a public ledger. Cryptocurrency is stored in digital wallets. 
-                    <a href="https://en.wikipedia.org/wiki/Cryptocurrency" class="text-info">More Info</a>
+                    <a href="https://en.wikipedia.org/wiki/Cryptocurrency" class="text-info" target="blank">More Info</a>
                 </div>
             </div>
 
@@ -116,7 +116,7 @@
 
                     India has levied a 30 per cent tax on crypto investors, and a 1 per cent TDS on every crypto intra-traders. Currently, India has not regulated cryptos but won’t legalise it as well.
 
-                    <a href="https://www.forbes.com/advisor/in/investing/cryptocurrency/crypto-bill/" class="text-info">More Info</a>
+                    <a href="https://www.forbes.com/advisor/in/investing/cryptocurrency/crypto-bill/" class="text-info" target="_blank">More Info</a>
 
         
                 </div>
@@ -131,6 +131,81 @@
     </div>
 
 
+
+<hr>
+    {% comment %} about page  {% endcomment %}
+    <div class="about container-fluid" style="background:black;">
+   
+       <div class="container">
+        <a id="about"></a>
+        <div class="row">
+           
+
+            <div class="col-sm-6">
+                <h1 class="text-light mt-4" style="font-size: 35px; font-weight: bold; text-transform: uppercase; text-decoration: underline;">About</h1>
+            </div>
+
+            <div class="col-sm-6 mt-4 text-light">
+                <ul>
+                    <li>  This application will provide the price prediction facilities for investing in Crypto martket. </li>
+                    <li>  It is true that the crypto market is more volatile than other markets. But the risk of volatility can be rewarded with high rewards.</li>
+                    <li>In this application we provide the price prediction facilities only for limited Crypto currencies which is trusted by some organizations.</li>
+                    <li>This application will help people to reduce risk and increase Investments returns. However, this application provide the price prediction facilities but still people need to understand the the Crypto market and its working conditions.</li>
+                    <li> This application uses  Machine Learning Algorithms to  provide the price prediction facilities.</li>
+                </ul>
+             
+                
+            </div>
+
+        </div>
+       </div>
+    </div>
+
+
+    {% comment %} project information  {% endcomment %}
+    <hr>
+    <div class="about container-fluid" style="background:black;">
+   
+        <div class="container">
+         <a id="project"></a>
+     
+            
+ 
+            <h1 class="text-center text-white" style="font-size: 35px;  font-weight: bold; text-transform: uppercase;">Project information</h1>
+
+            <h3 class="text-center text-white">
+                QORA-ANN: Quasi Opposition Based Rao Algorithm and Artificial Neural Network for Cryptocurrency Prediction
+            </h3>
+            <hr class='text-light'>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="text-light">Published in: 2021 6th International Conference for Convergence in Technology (I2CT)</p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="text-light">Date Added to IEEE Xplore: 10 May 2021</p>
+                    <a href="https://ieeexplore.ieee.org/document/9417870" class="text-info" target="_blank">More Info</a>
+                    <br>
+                    <a href="{% static 'home/paper/qoraANN.pdf' %}" class="text-info" target="_blank">Download Paper</a>
+                </div>
+                <div class="col-sm-6">
+                    <p class="text-light">
+                        Date of Conference: 02-04 April 2021
+                    </p>
+                    <p class="text-light">
+                       
+                 
+                    INSPEC Accession Number: 20690808
+                    DOI: 10.1109/I2CT51068.2021.9417870
+                    </p>
+                </div>
+            </div>
+
+            <div class="container text-light mt-3">
+                The cryptocurrency price movement behaves randomly and fluctuates like other stock markets. Prediction of cryptocurrency is a recent area of research interest and budding fast. The underlying nonlinearities in its price series make its prediction challenging. Sophisticated methodologies for accurate prediction of cryptocurrency are highly desired. Artificial neural networks (ANNs) are good approximators, however their accuracy is greatly subjective to optimal network structure and learning method. This article designs optimal ANNs for efficient cryptocurrency prediction using quasi opposition based Rao algorithms, i.e. QORA-ANN. The model explores a set of potential ANNs in the search space and lands at an optimal network through the evolving process. Historical data from four emerging cryptocurrencies such as Bitcoin, Litecoin, Ethereum, and Ripple are used to evaluate the QORA-ANN. The prediction ability of the proposed approach is compared with few similar methods such as ANN trained with genetic algorithm, differential evolution and particle swarm optimization (i.e. ANN-GA, ANN-DE, ANN-PSO), support vector machine (SVM), and multilayer perceptron (MLP). From exhaustive simulation studies and comparative result analysis it is found that the QORA-ANN method performed better than others and hence can be suggested as an efficient tool for cryptocurrencies prediction.
+            </div>
+    
+        </div>
+     </div>
 
 
     <script src="{% static 'home/js/jquery-3.3.1.min.js' %}"></script>
