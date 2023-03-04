@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'home/fonts/icomoon/style.css' %}">
 
     <link rel="stylesheet" href="{% static "home/css/owl.carousel.min.css" %}">
@@ -19,6 +19,23 @@
     <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
     <link rel="shortcut icon" href="{% static 'home/images/crypto.jpg' %}" type="image/x-icon">
     <title>Crypto Currency</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar{
+
+            width: 5px;
+          }
+        
+          ::-webkit-scrollbar-thumb{
+            
+            background-image: linear-gradient(white,rgb(6, 184, 169));
+           
+              border-radius: 20px;
+          }
+    </style>
   </head>
   <body>
 
@@ -63,9 +80,9 @@
                 </li>
                
                 <li><a href="#about"><span>About</span></a></li>
-                <li><a href="listings.html"><span>Datasets</span></a></li>
+                <li><a href="#datasets"><span>Datasets</span></a></li>
                 <li><a href="#project"><span>Project Info</span></a></li>
-                <li><a href="contact.html"><span>Team</span></a></li>
+                <li><a href="#team"><span>Team</span></a></li>
               </ul>
             </nav>
           </div>
@@ -132,17 +149,24 @@
 
 
 
-<hr>
+
     {% comment %} about page  {% endcomment %}
     <div class="about container-fluid" style="background:black;">
    
        <div class="container">
         <a id="about"></a>
+        <div class="about">
+            <h1 class="text-light" style="font-size: 35px; font-weight: bold; text-transform: uppercase; ">About</h1>
+        </div>
         <div class="row">
            
-
+            
             <div class="col-sm-6">
-                <h1 class="text-light mt-4" style="font-size: 35px; font-weight: bold; text-transform: uppercase; text-decoration: underline;">About</h1>
+                {% comment %} <h1 class="text-light mt-4" style="font-size: 35px; font-weight: bold; text-transform: uppercase; ">About</h1> {% endcomment %}
+
+                <img src="{% static 'home/images/etherium.jpg' %}" alt="" class="img-fluid">
+
+
             </div>
 
             <div class="col-sm-6 mt-4 text-light">
@@ -152,18 +176,24 @@
                     <li>In this application we provide the price prediction facilities only for limited Crypto currencies which is trusted by some organizations.</li>
                     <li>This application will help people to reduce risk and increase Investments returns. However, this application provide the price prediction facilities but still people need to understand the the Crypto market and its working conditions.</li>
                     <li> This application uses  Machine Learning Algorithms to  provide the price prediction facilities.</li>
+
+                    <li>
+                        The supported crypto currencies for this app are Bitcoin, Ethereum, Binance, USD, Ripple, Cardano, Solana, Polkadot.
+                    </li>
                 </ul>
              
                 
             </div>
 
         </div>
+
+        <div class="text-light text-center mt-4">****</div>
        </div>
     </div>
 
 
     {% comment %} project information  {% endcomment %}
-    <hr>
+ 
     <div class="about container-fluid" style="background:black;">
    
         <div class="container">
@@ -171,9 +201,9 @@
      
             
  
-            <h1 class="text-center text-white" style="font-size: 35px;  font-weight: bold; text-transform: uppercase;">Project information</h1>
+            <h1 class=" text-white" style="font-size: 35px;  font-weight: bold; text-transform: uppercase; text-align:right;">Project information</h1>
 
-            <h3 class="text-center text-white">
+            <h3 class="text-center text-white mt-4">
                 QORA-ANN: Quasi Opposition Based Rao Algorithm and Artificial Neural Network for Cryptocurrency Prediction
             </h3>
             <hr class='text-light'>
@@ -182,6 +212,7 @@
                     <p class="text-light">Published in: 2021 6th International Conference for Convergence in Technology (I2CT)</p>
                 </div>
                 <div class="col-sm-6">
+                    <p class="text-light">Publisher: IEEE</p>
                     <p class="text-light">Date Added to IEEE Xplore: 10 May 2021</p>
                     <a href="https://ieeexplore.ieee.org/document/9417870" class="text-info" target="_blank">More Info</a>
                     <br>
@@ -200,13 +231,159 @@
                 </div>
             </div>
 
-            <div class="container text-light mt-3">
+            <div class=" text-light mt-3">
                 The cryptocurrency price movement behaves randomly and fluctuates like other stock markets. Prediction of cryptocurrency is a recent area of research interest and budding fast. The underlying nonlinearities in its price series make its prediction challenging. Sophisticated methodologies for accurate prediction of cryptocurrency are highly desired. Artificial neural networks (ANNs) are good approximators, however their accuracy is greatly subjective to optimal network structure and learning method. This article designs optimal ANNs for efficient cryptocurrency prediction using quasi opposition based Rao algorithms, i.e. QORA-ANN. The model explores a set of potential ANNs in the search space and lands at an optimal network through the evolving process. Historical data from four emerging cryptocurrencies such as Bitcoin, Litecoin, Ethereum, and Ripple are used to evaluate the QORA-ANN. The prediction ability of the proposed approach is compared with few similar methods such as ANN trained with genetic algorithm, differential evolution and particle swarm optimization (i.e. ANN-GA, ANN-DE, ANN-PSO), support vector machine (SVM), and multilayer perceptron (MLP). From exhaustive simulation studies and comparative result analysis it is found that the QORA-ANN method performed better than others and hence can be suggested as an efficient tool for cryptocurrencies prediction.
             </div>
-    
+            <div class="text-light text-center mt-4">****</div>
         </div>
      </div>
 
+
+     {% comment %} team information  {% endcomment %}
+     <div class="about container-fluid" style="background:black;">
+   
+        <div class="container">
+         <a id="team"></a>
+         <div class="row">
+            
+ 
+             <div class="col-sm-6">
+                 <h1 class="text-light mt-4" style="font-size: 35px; font-weight: bold; text-transform: uppercase; ">Team Work</h1>
+ 
+                 <h3 class=" text-white mt-4">
+                    QORA-ANN: Quasi Opposition Based Rao Algorithm and Artificial Neural Network for Cryptocurrency Prediction
+                </h3>
+                
+                <div class="college text-light">
+                    SEA COLLEGE OF ENGINEERING AND TECHNOLOGY <br>
+
+                    Final Year Project
+                    <br>
+                    2023
+                </div>
+             </div>
+ 
+             <div class="col-sm-6 mt-4 text-light">
+                <img src="{% static 'home/images/team.jpg' %}" alt="" class="img-fluid">
+              
+                 
+             </div>
+ 
+         </div>
+ 
+
+        {% comment %} mam pic   {% endcomment %}
+
+        <div class="mam text-center" >
+            <p><b class="text-light">Under The Guidance Of</b></p>
+            <img src="{% static 'home/images/mam.jpg' %}" alt="" class="img-fluid" width="200px" height="200px">
+           <br> <p class="text-light">Prof. Saswati Behara</p>
+           <p class="text-light">Dept. Of Computer Science And Engineering</p>
+        </div>
+
+        <div class="row">
+           
+            <div class="col-sm-3">
+            <br>
+                <img src="{% static 'home/images/user.jpg' %}" alt="" class="img-fluid" width="200px" height="200px">
+               <br> <p class="text-light">Mozammil Hussain</p>
+               <p class="text-light">USN 1SP19CS059</p>
+            </div>
+            <div class="col-sm-3">
+                <br>
+                <img src="{% static 'home/images/user.jpg' %}" alt="" class="img-fluid" width="200px" height="200px">
+               <br> <p class="text-light">Himanshu Kumar Sharma</p>
+               <p class="text-light">USN 1SP19CS035</p>
+            </div>
+            <div class="col-sm-3">
+               <br>
+                <img src="{% static 'home/images/user.jpg' %}" alt="" class="img-fluid" width="200px" height="200px">
+               <br> <p class="text-light">MD. Aftab Hussain</p>
+               <p class="text-light">USN 1SP19CS051</p>
+            </div>
+            <div class="col-sm-3">
+                <br>
+                 <img src="{% static 'home/images/user.jpg' %}" alt="" class="img-fluid" width="200px" height="200px">
+                <br> <p class="text-light">MD. Majid Anwer</p>
+                <p class="text-light">USN 1SP19CS053</p>
+             </div>
+        </div>
+         <div class="text-light text-center mt-4">****</div>
+        </div>
+     </div>
+
+
+     {% comment %} datasets information   {% endcomment %}
+     <div class="about container-fluid" style="background:black;">
+   
+        <div class="container">
+         <a id="datasets"></a>
+         <div class="row">
+            
+ 
+          
+ 
+             <div class="col-sm-6 mt-4 text-light">
+              <hr>
+              <p class="text-light mt-4">The datasets is used for the ANN model has been taken from Binance.
+                Trusted by millions of users, Binance offers a relatively secure, versatile way to invest in and trade cryptocurrencies. The platform could be overwhelming for both beginners and experienced traders. Binance offers lower fees than many other cryptocurrency exchanges.<a href="https://www.binance.com/en/about" class="text-info" target="_blank">More Info</a></p>
+                 
+             </div>
+ 
+             <div class="col-sm-6">
+                <h1 class="text-light mt-4" style="font-size: 35px; font-weight: bold; text-transform: uppercase; text-align: right">Datasets</h1>
+
+              
+            </div>
+
+         </div>
+ 
+         <div class="text-light text-center mt-4">****</div>
+        </div>
+     </div>
+ 
+
+
+     {% comment %} footer for  {% endcomment %}
+
+     <div class="container-fluid" style="background-color: #000" >
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+           
+            <b class="text-light">
+                QORA-ANN: Quasi Opposition Based Rao Algorithm and Artificial Neural Network for Cryptocurrency Prediction
+            </b>
+
+           
+             <p class="text-info mt-4">
+                <a href="mailto:himanshu399231@gmail.com" class="text-info"><i class="fas fa-pen text-info"></i> <em>Mail Us</em></a>
+             </p>
+           
+             <p class="text-info mt-4">
+                <a href="tel:+8604470501" class="text-info"><i class="fas fa-phone text-info"></i><em> Contact Us</em></a>
+             </p>
+
+             <p class="text-info mt-4">
+                <a href="#about" class="text-info"><i class="fas fa-book text-info"></i><em> Abouts </em></a>
+             </p>
+
+             
+             <p class="text-info mt-4">
+                <a href="#project" class="text-info"><i class="fas fa-cog text-info"></i><em> Project </em></a>
+             </p>
+        </div>
+
+        <div class="col-sm-6">
+            <img src="{% static 'home/images/foot.jpg' %}" alt="" class="img-fluid" width="300px" height="100px">
+        </div>
+    </div>
+</div>
+
+
+     </div>
 
     <script src="{% static 'home/js/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'home/js/popper.min.js' %}"></script>
