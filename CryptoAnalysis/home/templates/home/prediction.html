@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Template</title>
+  <link rel="stylesheet" href="{% static 'home/css/dash.css' %}">
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1>Dashboard</h1>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <h2>QORA-ANN: Quasi Opposition Based Rao Algorithm and Artificial Neural Network for Cryptocurrency Price Prediction
+    </h2>
+      <div class="chart-container">
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h3>Visitors</h3>
+          <p>10,000</p>
+        </div>
+        <div class="card">
+          <h3>Revenue</h3>
+          <p>$10,000</p>
+        </div>
+        <div class="card">
+          <h3>Users</h3>
+          <p>1,000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

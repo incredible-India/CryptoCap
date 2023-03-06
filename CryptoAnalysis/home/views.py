@@ -11,3 +11,10 @@ from django.views import View
 class Index(View):
     def get(self, request):
         return render(request, 'home/index.html');
+
+
+#for the prediction value
+
+class prediction(View):
+    def get(self, request):
+        return render(request, 'home/prediction.html')
