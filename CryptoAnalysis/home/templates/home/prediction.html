@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Template</title>
   <link rel="stylesheet" href="{% static 'home/css/dash.css' %}">
-
+  
  
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -24,20 +24,21 @@
     <div class="main-content">
       <h2>QORA-ANN: Quasi Opposition Based Rao Algorithm and Artificial Neural Network for Cryptocurrency Price Prediction
     </h2>
+        <div class="text-danger errcode"><b>*Web Api Error :</b></div>
       <div class="chart-container">
         <canvas id="myChart"></canvas>
       </div>
       <div class="card-container">
         <div class="card">
-          <h3>Visitors</h3>
-          <p>10,000</p>
+          <h3>Bitcoin</h3>
+          <p id="btcprice">10,000</p>
         </div>
         <div class="card">
-          <h3>Revenue</h3>
-          <p>$10,000</p>
+          <h3>Sell </h3>
+          <p class="eth">$10,000</p>
         </div>
         <div class="card">
-          <h3>Users</h3>
+          <h3>Yarn Finance</h3>
           <p>1,000</p>
         </div>
       </div>
@@ -45,4 +46,5 @@
   </div>
 
 </body>
+<script src="{% static 'home/js/webapi.js' %}"></script>
 </html>
